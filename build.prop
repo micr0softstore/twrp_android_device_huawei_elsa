@@ -1,0 +1,8 @@
+ro.build.product=elsa
+ro.product.board=kirin990
+ro.product.brand=HUAWEI
+ro.product.manufacturer=HUAWEI
+ro.product.name=kirin990
+ro.product.device=kirin990
+ro.product.model=P40 Pro
+ro.product.cpu.abi=arm64-v8a
