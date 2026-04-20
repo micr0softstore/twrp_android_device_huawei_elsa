@@ -15,18 +15,18 @@
 #
 
 # Inherit from marie device
-$(call inherit-product, device/huawei/marie/device.mk)
+$(call inherit-product, device/huawei/elsa/device.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := marie
-DEVICE_PATH := device/huawei/marie
+PRODUCT_RELEASE_NAME := elsa
+DEVICE_PATH := device/huawei/elsa
 
 PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
 PRODUCT_NAME := twrp_$(PRODUCT_DEVICE)
 PRODUCT_BRAND := Huawei
-PRODUCT_MODEL := P30 Lite
+PRODUCT_MODEL := P40 Pro
 PRODUCT_MANUFACTURER := Huawei
 

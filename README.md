@@ -1,44 +1,29 @@
-# android_device_huawei_marie-SHRP
+# android_device_huawei_elas-TWRP
 
-1- To initialize your local repository using the OMNIROM trees to build SHRP, use a command like this:
-
-```
-mkdir shrp
-cd shrp
-repo init -u https://github.com/SHRP/manifest.git -b v3_11.0
-```
-
-2- Then to sync up:
 
 ```
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+Inital test twrp tree for Kirin 990 series
+Tested on P40 Pro by NDX Code (thanks)
+Big thanks to Daniel Kethily and Kirin-tool team for reverse engineering Kirin and unlocking 990
+Thanks to Iceows for TWRP tree schematics which helps me fixing bugs.
 ```
 
-3- Put this folder on
-
 ```
-git clone https://github.com/iceows/shrp_android_device_huawei_marie shrp/device/huawei/marie -b lineage-20.0
-git clone https://github.com/iceows/android_vendor_omni vendor/omni -b android-11.0
-```
-
-4- Apply patch
-
-```
-./device/huawei/marie/patches/apply-patches.sh 
+Bugs:
+aptouch: no touch (hopefully that got fixed now)
+decryption: (that might also been fixed)
+Vibration: its broken on Kirins, not gonna bother myself with it tbh.
+logcat: it is reported to be broken by NDX Code (still dont really know why, will have to check dmesg)
+fstab is fked up for now, will fix it later once twrp gets stable overall.
 ```
 
-5- Then to build for a device with recovery partition:
 ```
-. build/envsetup.sh
-lunch twrp_marie-eng
-mka recoveryimage
-or
-
-export ALLOW_MISSING_DEPENDENCIES=true; source build/envsetup.sh; lunch twrp_marie-eng; mka recoveryimage
-
+- How to build?
+- https://google.com/
+** aka if you dont know how, you shouldnt as this twrp is not yet stable for productional use.
 ```
 
-6- The output dir
 ```
-shrp/out/target/product/marie
+Supported devices:
+None really, Boots on P40 Pro, but should boot the same way on P40 Pro+ and if P40 can be unlocked there too.
 ```

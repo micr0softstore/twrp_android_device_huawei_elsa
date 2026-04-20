@@ -171,7 +171,6 @@
 /dev/ttyHwGS1				0660	root	system
 
 /dev/dsm                            0660  system    dsm
-/dev/usb_pcinfo_common              0660  root      usb
 
 /dev/block/sdc1                                 0660    system  system
 /dev/regulator-vivobus                          0660    system  system

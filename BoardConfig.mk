@@ -132,7 +132,7 @@ BOARD_SEPOLICY_DIRS += \
 
 
 SHRP_PATH := device/huawei/elsa
-SHRP_MAINTAINER := MSStore
+SHRP_MAINTAINER := micr0softstore
 SHRP_DEVICE_CODE := elsa
 
 # Recovery Type (for "About" section only)
