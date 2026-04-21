@@ -30,6 +30,7 @@ service oeminfo_nvm /system/sbin/true
 
 on boot
     start health-hal-2-0
+    start aptouch
 
     chown system system /sys/devices/platform/ff200000.hisi_usb/plugusb
     chmod 0660 /sys/devices/platform/ff200000.hisi_usb/plugusb
@@ -60,9 +61,9 @@ on property:sys.usb.config=adb
     start adbd
   
 # For touchscreen
-service aptouch /vendor/bin/aptouch_daemon
+service aptouch /system/vendor/bin/aptouch_daemon
     user root
-    group root system shell wakelock
+    group root system shell dsm log wakelock
     disabled
     seclabel u:r:aptouch:s0
 
