@@ -10,11 +10,11 @@ Thanks to Iceows for TWRP tree schematics which helps me fixing bugs.
 
 ```
 Bugs:
-aptouch: no touch (hopefully that got fixed now)
-decryption: (that might also been fixed)
+aptouch: no touch (hopefully last commit fixed it)
+decryption: (will work on that later)
 Vibration: its broken on Kirins, not gonna bother myself with it tbh.
-logcat: it is reported to be broken by NDX Code (still dont really know why, will have to check dmesg)
 fstab is fked up for now, will fix it later once twrp gets stable overall.
+no fastbootd aded yet as of insufficant space in recovery_ramdisk.
 ```
 
 ```
