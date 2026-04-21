@@ -19,6 +19,8 @@ LOCAL_PATH := device/huawei/elsa
 # Crypto
 EMUI9_FBE_CRYPTO := true
 
+PRODUCT_SHIPPING_API_LEVEL := 29
+
 # Inherit from twrp-common
 $(call inherit-product, device/huawei/twrp-common/kirin.mk)
 
@@ -46,5 +48,9 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.allow.mock.location=0 \
     service.adb.root=1 \
     ro.debuggable=1
+
+PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0 \
+    android.hardware.sensors@1.0
 
 

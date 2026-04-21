@@ -159,3 +159,12 @@ SHRP_REC_TYPE := normal
 SHRP_REC := /dev/block/bootdevice/by-name/erecovery_ramdisk
 SHRP_DARK := true
 
+# Stuffs
+
+BOARD_VNDK_VERSION := 29
+
+RECOVERY_LIBRARY_SOURCE_FILES += \
+    $(TARGET_OUT_VENDOR)/lib64/android.frameworks.sensorservice@1.0.so \
+    $(TARGET_OUT_VENDOR)/lib64/android.hardware.sensors@1.0.so \
+    $(TARGET_OUT_VENDOR)/lib64/vndk-29/android.frameworks.sensorservice@1.0.so \
+    $(TARGET_OUT_VENDOR)/lib64/vndk-29/android.hardware.sensors@1.0.so
