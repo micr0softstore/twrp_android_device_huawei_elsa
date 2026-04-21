@@ -1,4 +1,4 @@
-# android_device_huawei_elas-TWRP
+# android_device_huawei_elsa-TWRP
 
 
 ```
